@@ -1,5 +1,5 @@
 provider "aws" {
-   region     = "us-east-1"
+   region     = "eu-central-1"
    access_key = var.access_key
    secret_key = var.secret_key
 }
@@ -14,9 +14,9 @@ resource "aws_instance" "ec2_example" {
 
 terraform {
     backend "s3" {
-        bucket = "myfirstbucket345"
+        bucket = "mybucket1700"
         key    = "jhooq/terraform/remote/s3/terraform.tfstate"
-        region     = "us-east-1"
+        region     = "eu-central-1"
         dynamodb_table = "dynamodb-state-locking"
     }
 }
