@@ -14,7 +14,7 @@ resource "aws_instance" "ec2_example" {
 
 terraform {
   backend "s3" {
-    bucket         = "myfirstbucket345"
+    bucket         = "mybucket1700"
     key            = "jhooq/terraform/remote/s3/terraform.tfstate"
     encrypt        = true
     region         = "eu-central-1"
