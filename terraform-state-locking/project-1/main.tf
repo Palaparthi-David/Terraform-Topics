@@ -14,7 +14,7 @@ resource "aws_instance" "ec2_example" {
 
 terraform {
     backend "s3" {
-        bucket = "jhooq-terraform-s3-bucket"
+        bucket = "myfirstbucket345"
         key    = "jhooq/terraform/remote/s3/terraform.tfstate"
         region     = "eu-central-1"
         dynamodb_table = "dynamodb-state-locking"
