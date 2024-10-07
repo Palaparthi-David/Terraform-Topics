@@ -1,5 +1,5 @@
 provider "aws" {
-   region     = "eu-central-1"
+   region     = "us-east-1"
    access_key = var.access_key
    secret_key = var.secret_key
 }
@@ -16,7 +16,7 @@ terraform {
     backend "s3" {
         bucket = "myfirstbucket345"
         key    = "jhooq/terraform/remote/s3/terraform.tfstate"
-        region     = "eu-central-1"
+        region     = "us-east-1"
         dynamodb_table = "dynamodb-state-locking"
     }
 }
